@@ -59,7 +59,7 @@ function startGameFunction() {
           icon: "success",
           confirmButtonText: "OK",
         }).then(() => {
-          location.href = "/jogoDaVelha/index.html";
+          location.href = "../jogoDaVelha/index.html";
         });
       }
     }, 1000);
@@ -95,7 +95,7 @@ const handleLogicForGameOver = () => {
     pipe.style.animation = "";
     pipe.style.left = `${pipeLocalization}px`;
 
-    mario.src = "/gameJump/imagens/aline.png";
+    mario.src = "../imagens/aline.png";
     mario.style.marginLeft = "50px";
     mario.style.bottom = `-200px`;
     mario.style.width = "80px";

@@ -29,7 +29,7 @@ body {
   height: 60%;
 
   border-radius: 10px;
-  background: url("/gameJump/imagens/overlay-background.png") center center;
+  background: url("../imagens/overlay-background.png") center center;
   background-size: contain;
 
   overflow: hidden;

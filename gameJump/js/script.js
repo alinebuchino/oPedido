@@ -9,11 +9,11 @@ const startGameInfo = document.querySelector(".start-game");
 let countScore = 0;
 let startGame = true;
 let timerVerifyDead;
-let timerScore;
 let timerSpeed;
+let lastPipePosition = 0;
 
 startGameInfo.innerHTML = `
-  <p style="text-align: center;">Pressione na tela para iniciar</p>
+  <p style="text-align: center; bottom: 10%;" >Pressione na tela para iniciar</p>
 `;
 
 reset.addEventListener("click", () => window.location.reload());
@@ -30,32 +30,12 @@ function startGameFunction() {
     let pipeSpeed = 6;
     startGameInfo.innerHTML = "";
     startGameInfo.style.background = "transparent";
-    timerScore = setInterval(() => {
-      countScore++;
-      score.innerHTML = `SCORE ${countScore}`;
-
-      if (countScore === 2) {
-        clearInterval(timerScore);
-        clearInterval(timerSpeed);
-        pipe.classList.remove("pipeRun");
-
-        Swal.fire({
-          title: "Parabéns!",
-          text: "Coisa marlinda!",
-          icon: "success",
-          confirmButtonText: "OK",
-        }).then(() => {
-          location.href = "../../jogoDaVelha/index.html";
-        });
-      }
-    }, 1000);
 
     timerSpeed = setInterval(() => {
       pipeSpeed -= 0.1;
       if (pipeSpeed <= 0) {
         pipeSpeed = 0.6;
       }
-      console.log({ pipeSpeed });
       pipe.style.animationDelay = `pipe-animate ${pipeSpeed}s infinite linear`;
     }, 1000 * 10);
   }
@@ -64,6 +44,7 @@ function startGameFunction() {
 
   timerVerifyDead = setInterval(() => {
     handleLogicForGameOver();
+    detectPipePass();
   }, 10);
 }
 
@@ -90,8 +71,33 @@ const handleLogicForGameOver = () => {
     overlayScore.innerHTML = `SCORE ${countScore}`;
     overlay.style.display = "flex";
 
-    clearInterval(timerScore);
     clearInterval(timerVerifyDead);
+    clearInterval(timerSpeed);
+  }
+};
+
+const detectPipePass = () => {
+  const pipeLocalization = pipe.offsetLeft;
+
+  if (pipeLocalization < 0 && lastPipePosition >= 0) {
+    countScore++;
+    score.innerHTML = `SCORE ${countScore}`;
+    lastPipePosition = pipeLocalization;
+
+    if (countScore === 2) {
+      gameEnded = true;
+      pipe.classList.remove("pipeRun");
+      Swal.fire({
+        title: "Parabéns!",
+        text: "Coisa marlinda!",
+        icon: "success",
+        confirmButtonText: "OK",
+      }).then(() => {
+        location.href = "../../jogoDaVelha/index.html";
+      });
+    }
+  } else if (pipeLocalization >= 0) {
+    lastPipePosition = pipeLocalization;
   }
 };
 

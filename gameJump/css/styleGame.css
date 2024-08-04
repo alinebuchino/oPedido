@@ -128,7 +128,7 @@ body {
 }
 
 .pipeRun {
-  animation: pipe-animate 3s infinite linear;
+  animation: pipe-animate 2.5s infinite linear;
 }
 
 .pipe {
@@ -153,7 +153,7 @@ body {
 
 .start-game {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -180,13 +180,13 @@ body {
     bottom: 0;
   }
   40% {
-    bottom: 120px;
+    bottom: 150px; /* Altura máxima do salto */
   }
   50% {
-    bottom: 120px;
+    bottom: 150px; /* Mantém a altura máxima por um curto período */
   }
   60% {
-    bottom: 120px;
+    bottom: 150px; /* Mantém a altura máxima por um curto período */
   }
   100% {
     bottom: 0;

@@ -104,7 +104,7 @@ const marcar = (e) => {
           icon: "success",
           confirmButtonText: "OK",
         }).then(() => {
-          location.href = "/quizz/quizz.html";
+          location.href = "../quizz/quizz.html";
         });
       }
     } else {

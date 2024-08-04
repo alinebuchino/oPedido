@@ -172,7 +172,7 @@ function showResult() {
         clearInterval(timerInterval);
       },
     }).then(() => {
-      location.href = "/pedido/index.html";
+      location.href = "../pedido/index.html";
     });
   } else {
     Swal.fire({
@@ -183,7 +183,7 @@ function showResult() {
       icon: "error",
       confirmButtonText: "OK",
     }).then(() => {
-      location.href = "/quizz/quizz.html";
+      location.href = "quizz.html";
     });
   }
 }

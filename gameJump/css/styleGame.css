@@ -128,7 +128,7 @@ body {
 }
 
 .pipeRun {
-  animation: pipe-animate 1.5s infinite linear;
+  animation: pipe-animate 3s infinite linear;
 }
 
 .pipe {

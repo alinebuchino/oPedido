@@ -48,7 +48,7 @@ sim.addEventListener("click", () => {
       clearInterval(timerInterval);
     },
   }).then(() => {
-    location.href = "/aceitou/index.html";
+    location.href = "../aceitou/index.html";
   });
 });
 

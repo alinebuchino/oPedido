@@ -85,7 +85,6 @@ const detectPipePass = () => {
     lastPipePosition = pipeLocalization;
 
     if (countScore === 2) {
-      gameEnded = true;
       pipe.classList.remove("pipeRun");
       Swal.fire({
         title: "Parabéns!",

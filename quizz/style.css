@@ -37,6 +37,15 @@ header h1 {
   margin-top: 24px;
   font-size: 30px;
   color: #f1f5f9;
+  border-bottom: 2px solid #ccc; /* Linha abaixo do título */
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+header p {
+  font-size: 15px;
+  color: #f1f5f9;
+  text-align: center;
 }
 
 #quiz {

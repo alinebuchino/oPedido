@@ -18,7 +18,7 @@ function toggleMode() {
 function log() {
   var senha = document.getElementById("password").value;
 
-  if (senha === "27/04") {
+  if (senha === "2704") {
     Swal.fire({
       title: "Parabéns!",
       text: "Coisa marlinda!",

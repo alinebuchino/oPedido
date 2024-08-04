@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/home/css/styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <table
+      align="center"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      class="background"
+    >
+      <tr>
+        <td align="center" valign="top" bgcolor="#2D3445">
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            align="center"
+            class="wrapper"
+          >
+            <tr>
+              <td align="center" valign="top" class="hero">
+                <br />
+                <img
+                  src="/home/imagens/loveHome.png"
+                  alt="Please enable images to view this content"
+                  title="Hero Image"
+                  width="340"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="header">
+                MUITO BEM, MINHA JÉ DE IDADE. VOCÊ PASSOU PARA A PRÓXIMA ETAPA
+                DO GAME.
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="supheader">Introdução</td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="paragraph">
+                Sei que tu gosta de enigmas e desafios, assim como eu, portanto,
+                preparei alguns para ti. Se tudo sair como o esperado e você
+                conseguir cumprir todos os desafios (dessa página e das demais),
+                a verdade por trás de tudo isso será revelada. Espero que se
+                divirta assim como eu me diverti fazendo! =)
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" valign="top">
+                <div class="footer">
+                  <div class="container">
+                    <div class="grid-4 footer-redes">
+                      <h3>PARTE 1: Desvende</h3>
+                      <ul>
+                        <li>
+                          01000001 00100000 01100100 01100101 01100011 01101111
+                          01100100 01101001 01100110 01101001 01100011 01100001
+                          01100001 01100001 01101111 00100000 01100100 01101111
+                          00100000 01100011 01101111 01100100 01101001 01100111
+                          01101111 00100000 01100010 01101001 01101110 01100001
+                          01110010 01101001 01101111 00100000 01100101 00111010
+                          00100000 01100001 01101101 01100001 01100100 01101001
+                          01101110 01101000 01101111
+                        </li>
+                        <li class="decod">
+                          <br />
+                          <a
+                            href="https://www.binaryhexconverter.com/binary-to-ascii-text-converter"
+                            >Clique aqui para desvendar o código binário</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="grid-4 footer-redes">
+                      <br />
+                      <h3>PARTE 2: Aplique aqui</h3>
+                      <ul>
+                        <li>
+                          xg2vFfbBhYzMWbUANaM9CKltrk-
+                          GHJC11w29r14kvzKGOFgtSMBvSUV
+                          3pKNiYBCRCnvzdGNdpTFGmNbR9HlJpQ
+                        </li>
+                        <li class="decod">
+                          <br />
+                          <a
+                            href="https://www.invertexto.com/texto-criptografado"
+                            >Clique aqui para descriptografar</a
+                          >
+                        </li>
+                        <li>
+                          <form action="">
+                            <div class="inputs">
+                              <br/><br/>
+                              <input type="password" id="password" placeholder="Password" />
+                              <br /><br />
+                              <input class="button" type="submit" onclick="log(); return false" value="Enviar" 
+                              />
+                            </div>
+                            </div>
+                          </form>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" valign="top" class="line">
+                <hr width="100%" size="1" noshade />
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="footer">
+                Minha Amada.
+                <a href="#" style="text-decoration: underline; color: #828999"
+                  >LoveU</a
+                >
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function log() {
+        var senha = document.getElementById("password").value;
+
+        if (senha == "eusouumagrandegostosa") {
+          Swal.fire({
+            title: "Parabéns!",
+            text: "Coisa marlinda!",
+            icon: "success",
+            confirmButtonText: "OK",
+          }).then(() => {
+            location.href = "/gameJump/html/index.html";
+          });
+        } else {
+          Swal.fire({
+            title: "Pense mais um pouco!",
+            text: "Lerdinha!",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

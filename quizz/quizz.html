@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz</title>
+    <link rel="stylesheet" href="/quizz/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Quizz do casalzão</h1>
+        <br />
+        <p>(se errar terá divórcio, mas sem pressão 😁)</p>
+      </header>
+
+      <div id="quiz"></div>
+      <button id="next-btn" style="display: none">Próxima Pergunta</button>
+
+      <div id="acertos">
+        <strong>Acertos</strong>
+        <span id="score">0 de 11</span>
+      </div>
+
+      <template>
+        <div class="quiz-item">
+          <h3>
+            <span class="question-index"></span>
+            <span class="question-text"></span>
+          </h3>
+          <dl>
+            <dt>
+              <input type="radio" name="item" value="0" />
+              <span></span>
+            </dt>
+          </dl>
+        </div>
+      </template>
+
+      <script src="/quizz/script.js"></script>
+    </main>
+  </body>
+</html>

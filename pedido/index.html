@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8">
+	<title>O Pedido</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" defer></script>
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!--Fontes-->
+	<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+	<!-- CABEÇALHO -->
+	<header class="cabecalho" id="header">
+		<div class="menu">
+			<nav class="menu-nav">
+				<label for="icon-menu"><img src="imagens/icon-menu.png" alt="menu" /></label>
+				<input type="checkbox" id="icon-menu" checked />
+				<ul class="barra">
+					<a href="#sobre" onclick="chamado()">
+						<li>SOBRE NÓS</li>
+					</a>
+					<a href="#galeria" onclick="chamado()">
+						<li>FOTOS</li>
+					</a>
+					<a href="#pedido" onclick="chamado()">
+						<li>PEDIDO</li>
+					</a>
+					<a href="#rodape" onclick="chamado()">
+						<li>RODAPE</li>
+					</a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- SOBRE -->
+	<section class="sobre" id="sobre">
+		<article class="sobre-container">
+			<div class="sobre-img">
+				<img src="imagens/sobreNos.jpeg">
+			</div>
+			<div class="sobre-caption">
+				<h2>Sobre nós</h2>
+				<p>
+					Um casal que se conheceu há 9 anos, passou por altos e baixos e, após 4 anos, se reencontrou
+					novamente,
+					sem pretensão, sem planejar, mas o reencontro veio com um propósito muito maior. Afinal,
+					quem vai nos dizer o que é o <strong>amor</strong>?<br /><br />
+					Depois de muitos desencontros, o universo finalmente decidiu que agora era o momento certo para a
+					gente se "encontrar" e dessa vez da maneira certa.
+				</p>
+			</div>
+		</article>
+	</section>
+
+	<!-- GALERIA -->
+	<section class="galeria" id="galeria">
+		<article class="galeria-row">
+			<div class="galeria-foto"><img src="imagens/foto1.jpeg" alt="Foto da Galeria"></div>
+			<div class="galeria-foto"><img src="imagens/foto2.jpeg" alt="Foto da Galeria"></div>
+			<div class="galeria-foto"><img src="imagens/foto4.jpeg" alt="Foto da Galeria"></div>
+		</article>
+		<article class="galeria-row">
+			<div class="galeria-foto"><img src="imagens/foto5.png" alt="Foto da Galeria"></div>
+			<div class="galeria-foto"><img src="imagens/foto6.jpeg" alt="Foto da Galeria"></div>
+			<div class="galeria-foto"><img src="imagens/foto7.jpeg" alt="Foto da Galeria"></div>
+			<div class="galeria-foto"><img src="imagens/foto8.jpeg" alt="Foto da Galeria"></div>
+			<div class="galeria-foto"><img src="imagens/foto3.jpeg" alt="Foto da Galeria"></div>
+		</article>
+	</section>
+
+	<!-- PEDIDO -->
+	<section class="pedido" id="pedido">
+		<h2 class="titleH2">As vezes duas pessoas precisam se separar para ver o quanto precisam estar juntas,
+			não se trata de consertar o que está quebrado, trata-se de se apaixonar novamente,
+			criar algo melhor e muito mais saudável, juntas.<br><br>
+			Quero entrelaçar dedos, mãos, braços, pernas, línguas, almas, dias, anos e a minha vida na sua, para sempre.
+		</h2>
+		<article class="articlePedido">
+			<p class="cta-text">Você aceita namorar comigo?</p>
+			<div class="cta"></div>
+			<button class="btn" id="yes">
+				<span class="btn-text-one">Sim</span>
+				<span class="btn-text-two">Eita! 💕</span>
+			</button>
+			<button class="btn no">
+				<span class="btn-text-one">Não</span>
+				<span class="btn-text-two">😅</span>
+			</button>
+			</div>
+			</div>
+		</article>
+	</section>
+
+	<!-- RODAPÉ -->
+	<footer class="rodape" id="rodape">
+		<div class="rodape-container">
+			<a href="#header">Voltar ao topo<i class="fas fa-angle-up"></i></a>
+			<h3> Todos os direitos de amor estão reservados a ti. </h3>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -13,26 +13,12 @@ let timerScore;
 let timerSpeed;
 
 startGameInfo.innerHTML = `
-  <p style="text-align: center;">Pressione o botão abaixo para iniciar</p>
-  <button id="startButton" style="
-    background-color: transparent
-    border: none;
-    display: flex
-    font-size: 13px;
-    font-weight: bold;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px; 
-    color: #598419;
-  ">Iniciar Jogo</button>
+  <p style="text-align: center;">Pressione na tela para iniciar</p>
 `;
 
 reset.addEventListener("click", () => window.location.reload());
 
-document
-  .getElementById("startButton")
-  .addEventListener("click", startGameFunction);
+document.addEventListener("click", startGameFunction);
 
 function startGameFunction() {
   pipe.classList.add("pipeRun");
@@ -59,7 +45,7 @@ function startGameFunction() {
           icon: "success",
           confirmButtonText: "OK",
         }).then(() => {
-          location.href = "../jogoDaVelha/index.html";
+          location.href = "../../jogoDaVelha/index.html";
         });
       }
     }, 1000);

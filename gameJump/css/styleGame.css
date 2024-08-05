@@ -110,7 +110,7 @@ p {
 .clouds,
 .clouds-2 {
   position: absolute;
-  top: 40px;
+  top: 20px;
   width: 400px;
   animation: clouds-animate 20s infinite linear;
   z-index: 1;

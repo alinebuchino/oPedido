@@ -36,7 +36,7 @@ const perguntas = [
 
   {
     pergunta: "Quem deu o primeiro beijo no show do Guns N’ Roses ?",
-    respostas: ["Eu", "Você", "Ninguém", "-"],
+    respostas: ["Aline", "Jéssica", "Ninguém", "-"],
     correta: 0,
   },
 

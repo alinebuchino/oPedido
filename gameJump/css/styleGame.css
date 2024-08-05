@@ -180,13 +180,13 @@ body {
     bottom: 0;
   }
   40% {
-    bottom: 150px; /* Altura máxima do salto */
+    bottom: 170px; /* Altura máxima do salto */
   }
   50% {
-    bottom: 150px; /* Mantém a altura máxima por um curto período */
+    bottom: 170px; /* Mantém a altura máxima por um curto período */
   }
   60% {
-    bottom: 150px; /* Mantém a altura máxima por um curto período */
+    bottom: 170px; /* Mantém a altura máxima por um curto período */
   }
   100% {
     bottom: 0;

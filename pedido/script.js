@@ -28,6 +28,13 @@ btn.addEventListener("mouseover", function () {
   }
 });
 
+// Evento de clique para verificar se o clique ocorreu fora do botão
+document.addEventListener("click", function (event) {
+  if (!btn.contains(event.target)) {
+    btn.style.transform = `translate(0px, 0px)`;
+  }
+});
+
 const sim = document.getElementById("yes");
 
 sim.addEventListener("click", () => {

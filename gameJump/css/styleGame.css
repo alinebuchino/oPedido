@@ -16,25 +16,19 @@ body {
   justify-content: center;
   background: #0000009a;
   color: #efefef;
-
   position: fixed;
   inset: 0;
-
-  z-index: 2;
+  z-index: 3;
 }
 
 .overlay-content {
   position: relative;
   width: 60%;
   height: 60%;
-
   border-radius: 10px;
   background: url("../imagens/overlay-background.png") center center;
   background-size: contain;
-
   overflow: hidden;
-
-  z-index: 2;
 }
 
 .overlay-title {

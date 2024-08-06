@@ -282,3 +282,9 @@ footer.rodape div.rodape-container h3 {
   display: flex;
   justify-content: center;
 }
+
+#play-audio {
+  background: transparent;
+  top: 1rem;
+  cursor: pointer;
+}

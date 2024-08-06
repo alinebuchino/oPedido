@@ -24,7 +24,9 @@ img {
 header.cabecalho {
   width: 100%;
   background: #000000;
+  padding-top: 10px;
 }
+
 header.cabecalho div.menu {
   width: 90%;
   margin: 0 auto;
@@ -32,14 +34,18 @@ header.cabecalho div.menu {
   justify-content: space-between;
   align-items: center;
 }
+
 header.cabecalho div.menu nav.menu-nav {
 }
+
 header.cabecalho div.menu nav.menu-nav #icon-menu {
   display: none;
 }
+
 header.cabecalho div.menu nav.menu-nav #icon-menu:checked ~ .barra {
   display: none;
 }
+
 header.cabecalho div.menu nav.menu-nav ul.barra {
   padding: 10%;
   width: 100%;
@@ -196,6 +202,12 @@ footer.rodape div.rodape-container h3 {
   align-items: center;
 }
 
+.containerButton {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .btn {
   width: 120px;
   height: 40px;
@@ -208,7 +220,6 @@ footer.rodape div.rodape-container h3 {
   position: relative;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  left: 3rem;
 }
 
 .btn span {
@@ -265,4 +276,9 @@ footer.rodape div.rodape-container h3 {
   text-align: center;
   font-size: 28px;
   padding-bottom: 40px;
+}
+
+#audio-container {
+  display: flex;
+  justify-content: center;
 }

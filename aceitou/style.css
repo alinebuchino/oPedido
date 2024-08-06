@@ -11,7 +11,7 @@ body {
   --heightBadge: 33.75rem;
 
   height: 100%;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -23,9 +23,21 @@ body {
   background-size: cover;
 }
 
+.container {
+  position: relative;
+  width: fit-content;
+}
+
+#background-audio {
+  position: absolute;
+  top: 15px;
+  left: -140%;
+  z-index: 20;
+}
+
 #faixa {
   position: relative;
-  z-index: 60;
+  z-index: 10;
 }
 
 .glassEffect {
@@ -144,7 +156,7 @@ li img {
   border: 2px solid #121214;
 }
 .modal p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin-top: 3rem;
   color: #a8a8b3;
@@ -194,7 +206,7 @@ button {
   font-size: 1rem;
   background-color: #ffcd1e;
   color: #09090a;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   cursor: pointer;
 }

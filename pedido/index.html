@@ -15,13 +15,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-	<audio controls autoplay>
-		<source src="../musica/deTodosOsAmores.mp3" type="audio/mp3" />
-	  </audio>
 </head>
 
 <body>
+	<audio id="background-audio" autoplay >
+		<source src="../musica/deTodosOsAmores.mp3" type="audio/mp3" />
+    </audio>
+
+	<div id="audio-container">
+		<button id="play-audio">Clique aqui para ouvir a música</button>
+	</div>
 
 	<!-- CABEÇALHO -->
 	<header class="cabecalho" id="header">
@@ -93,14 +96,17 @@
 		<article class="articlePedido">
 			<p class="cta-text">Você aceita namorar comigo?</p>
 			<div class="cta"></div>
-			<button class="btn" id="yes">
-				<span class="btn-text-one">Sim</span>
-				<span class="btn-text-two">Eita! 💕</span>
-			</button>
-			<button class="btn no">
-				<span class="btn-text-one">Não</span>
-				<span class="btn-text-two">😅</span>
-			</button>
+			<div class="containerButton">
+				<button class="btn" id="yes">
+					<span class="btn-text-one">Sim</span>
+					<span class="btn-text-two">Eita! 💕</span>
+				</button>
+				<button class="btn no">
+					<span class="btn-text-one">Não</span>
+					<span class="btn-text-two">😅</span>
+				</button>
+			</div>
+			
 			</div>
 			</div>
 		</article>
@@ -114,5 +120,4 @@
 		</div>
 	</footer>
 </body>
-
 </html>

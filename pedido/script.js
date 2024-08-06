@@ -2,6 +2,13 @@ var btn = document.querySelector(".no");
 var position = 0;
 var isAnimating = false;
 
+document.getElementById("play-audio").addEventListener("click", () => {
+  const audio = document.getElementById("background-audio");
+  audio.play().catch((error) => {
+    console.log("Erro ao tentar reproduzir o áudio:", error);
+  });
+});
+
 btn.addEventListener("click", function () {
   if (!isAnimating) {
     isAnimating = true;

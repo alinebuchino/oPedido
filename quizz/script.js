@@ -76,7 +76,7 @@ const perguntas = [
       "Porque são fofos",
       "Porque somos uma coisinha estranha e uma menina chata",
       "Porque são inseparáveis",
-      "Porque Lilo nos faz lembrar a Aline e Stitch nos lembra a Jessica.",
+      "Porque Lilo nos faz lembrar a Aline e Stitch nos lembra a Jessica",
     ],
     correta: 1,
   },

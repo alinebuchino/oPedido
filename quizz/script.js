@@ -65,14 +65,19 @@ const perguntas = [
   },
 
   {
-    pergunta: "Quando tempo tínhamos juntas na nossa primeira vez ?",
+    pergunta: "Quanto tempo tínhamos juntas na nossa primeira vez ?",
     respostas: ["8 meses", "11 meses", "1 ano e 2 meses", "1 ano"],
     correta: 3,
   },
 
   {
-    pergunta: "Qual nome de cachorro sempre quis ter ?",
-    respostas: ["Lordiana", "Lorde", "Nicolas", "Noop"],
+    pergunta: "⁠Por que fazemos referências ao desenho Lilo e Stitch ?",
+    respostas: [
+      "Porque são fofos",
+      "Porque somos uma coisinha estranha e uma menina chata",
+      "Porque são inseparáveis",
+      "Porque Lilo nos faz lembrar a Aline e Stitch nos lembra a Jessica.",
+    ],
     correta: 1,
   },
 

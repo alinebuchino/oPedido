@@ -84,7 +84,7 @@ window.addEventListener("load", () => {
       score.innerHTML = `SCORE ${countScore}`;
       lastPipePosition = pipeLocalization;
 
-      if (countScore === 2) {
+      if (countScore === 5) {
         pipe.classList.remove("pipeRun");
         Swal.fire({
           title: "Parabéns!",

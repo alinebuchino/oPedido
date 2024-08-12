@@ -14,8 +14,7 @@ window.addEventListener("load", () => {
   let lastPipePosition = 0;
 
   startGameInfo.innerHTML = `
-  <p style="text-align: center; bottom: 10%;" >Pressione na tela para iniciar</p>
-`;
+  <p>Pressione na tela para iniciar</p>`;
 
   reset.addEventListener("click", () => window.location.reload());
   document.addEventListener("click", startGameFunction);
@@ -84,7 +83,7 @@ window.addEventListener("load", () => {
       score.innerHTML = `SCORE ${countScore}`;
       lastPipePosition = pipeLocalization;
 
-      if (countScore === 5) {
+      if (countScore === 10) {
         pipe.classList.remove("pipeRun");
         Swal.fire({
           title: "Parabéns!",
